@@ -1,0 +1,483 @@
+{
+  "board": [
+    {
+      "title": "Sprint 4 Project",
+      "createdAt": 1589983468418,
+      "createdBy": {
+        "_id": "600556f6fb996f4ca453bb0d",
+        "username": "FartsKing",
+        "fullname": "Reem Ben David",
+        "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+      },
+      "style": {
+        "bg": "linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)"
+      },
+      "members": [
+        {
+          "_id": "600556f6fb996f4ca453bb0d",
+          "username": "FartsKing",
+          "fullname": "Reem Ben David",
+          "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+        },
+        {
+          "_id": "600558837f6dcf4ebc046dbc",
+          "username": "YungiBabush",
+          "fullname": "Nofar Yunger",
+          "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+        },
+        {
+          "_id": "600557dc7f6dcf4ebc046dbb",
+          "username": "FartsPrince",
+          "fullname": "Yoni Segev",
+          "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+        }
+      ],
+      "lists": [
+        {
+          "id": "g101",
+          "title": "To Do",
+          "tasks": [
+            {
+              "id": "c104",
+              "title": "Task Details Functionality",
+              "description": "Fully finish everything releated to task details functionality!",
+              "comments": [
+                {
+                  "id": "ZdPnm",
+                  "txt": "a comment",
+                  "createdAt": 1590999817436,
+                  "byMember": {
+                    "_id": "u101",
+                    "fullname": "Tal Tarablus",
+                    "imgUrl": "http://res.cloudinary.com/shaishar9/image/upload/v1590850482/j1glw3c9jsoz2py0miol.jpg"
+                  }
+                }
+              ],
+              "checklists": [],
+              "members": [
+                {
+                  "_id": "u102",
+                  "username": "FartsKing",
+                  "fullname": "Reem Ben David",
+                  "imgUrl": "https://www.byrdie.com/thmb/eZJ7or3B6M-yi9p5PlOm0kYWJL4=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1035308964-5d15a77127854247b5c841d339a546c0.jpeg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "YungiBabush",
+                  "fullname": "Nofar Yunger",
+                  "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610699982/igckslovcmq4zyl1sqou.jpg"
+                },
+                {
+                  "_id": "u103",
+                  "username": "FartsPrince",
+                  "fullname": "Yoni Segev",
+                  "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+                }
+              ]
+            },
+            {
+              "title": "Lorem ipsum",
+              "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, autem.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, autem.",
+              "createdAt": 1610634356029,
+              "id": "UkYv0"
+            },
+            {
+              "title": "popo",
+              "description": "Always need one popo ",
+              "createdAt": 1610634412444,
+              "id": "Zh9hU"
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#9895e0"
+            }
+          }
+        },
+        {
+          "id": "g102",
+          "title": "In Progress",
+          "tasks": [
+            {
+              "id": "c104",
+              "title": "Task Details Functionality",
+              "description": "Fully finish everything releated to task details functionality",
+              "comments": [
+                {
+                  "id": "ZdPnm",
+                  "txt": "a comment",
+                  "createdAt": 1590999817436,
+                  "byMember": {
+                    "_id": "600557dc7f6dcf4ebc046dbb",
+                    "username": "FartsPrince",
+                    "fullname": "Yoni Segev",
+                    "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+                  }
+                }
+              ],
+              "checklists": [
+                {
+                  "id": "YEhmF",
+                  "title": "Checklist",
+                  "todos": [
+                    {
+                      "title": "To Do 1",
+                      "isDone": false,
+                      "id": "212jX"
+                    }
+                  ]
+                }
+              ],
+              "members": [
+                {
+                  "_id": "u102",
+                  "username": "FartsKing",
+                  "fullname": "Reem Ben David",
+                  "imgUrl": "https://www.byrdie.com/thmb/eZJ7or3B6M-yi9p5PlOm0kYWJL4=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1035308964-5d15a77127854247b5c841d339a546c0.jpeg"
+                },
+                {
+                  "_id": "u103",
+                  "username": "FartsPrince",
+                  "fullname": "Yoni Segev",
+                  "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+                }
+              ],
+              "labels": [
+                {
+                  "id": "101",
+                  "color": "#61bd4f",
+                  "title": ""
+                }
+              ],
+              "createdAt": 1590999730348,
+              "dueDate": 16156215211,
+              "byMember": {
+                "_id": "600557dc7f6dcf4ebc046dbb",
+                "username": "FartsPrince",
+                "fullname": "Yoni Segev",
+                "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+              },
+              "style": {}
+            },
+            {
+              "title": "Put more Demi-data",
+              "description": "One man has walked downstairs then fell then suddenly schnitzel. More jokes from reem at - www.blabla.iJustNeedWords.com",
+              "createdAt": 1610634626891,
+              "id": "bGJKR",
+              "labels": [
+                {
+                  "id": "103",
+                  "color": "#f99f1b",
+                  "title": ""
+                }
+              ],
+              "members": [
+                {
+                  "_id": "600557dc7f6dcf4ebc046dbb",
+                  "username": "FartsPrince",
+                  "fullname": "Yoni Segev",
+                  "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+                },
+                {
+                  "_id": "600558837f6dcf4ebc046dbc",
+                  "username": "YungiBabush",
+                  "fullname": "Nofar Yunger",
+                  "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+                }
+              ]
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          }
+        },
+        {
+          "id": "g103",
+          "title": "Done",
+          "tasks": [
+            {
+              "title": "asdfasd",
+              "description": "",
+              "createdAt": 1610913051755,
+              "id": "vaU9z",
+              "labels": [
+                {
+                  "id": "101",
+                  "color": "#61bd4f",
+                  "title": ""
+                },
+                {
+                  "id": "102",
+                  "color": "#f2d602",
+                  "title": ""
+                },
+                {
+                  "id": "103",
+                  "color": "#f99f1b",
+                  "title": ""
+                },
+                {
+                  "id": "104",
+                  "color": "#eb5a46",
+                  "title": ""
+                }
+              ],
+              "members": [
+                {
+                  "_id": "u103",
+                  "username": "FartsPrince",
+                  "fullname": "Yoni Segev",
+                  "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+                },
+                {
+                  "_id": "u102",
+                  "username": "FartsKing",
+                  "fullname": "Reem Ben David",
+                  "imgUrl": "https://www.byrdie.com/thmb/eZJ7or3B6M-yi9p5PlOm0kYWJL4=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1035308964-5d15a77127854247b5c841d339a546c0.jpeg"
+                }
+              ]
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          }
+        },
+        {
+          "title": "asdf",
+          "tasks": [],
+          "style": {
+            "title": {
+              "bgColor": "#3cc2e0"
+            },
+            "bgColor": "#3cc2e082"
+          },
+          "id": "5qS6k"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a101",
+          "txt": "Changed Color",
+          "createdAt": 154514,
+          "byMember": {
+            "fullname": "Abi Abambi",
+            "imgUrl": "http://some-img"
+          },
+          "task": {
+            "id": "c101",
+            "title": "Replace Logo"
+          }
+        }
+      ]
+    },
+    {
+      "title": "",
+      "members": [],
+      "style": {
+        "bg": "linear-gradient(to top, #30cfd0 0%, #330867 100%)"
+      },
+      "description": "",
+      "createdAt": 1610926534244,
+      "lists": [
+        {
+          "id": "vm3Md",
+          "title": "To Do",
+          "style": {
+            "bgColor": "rgb(152, 149, 224,82)",
+            "title": {
+              "bgColor": "rgb(152, 149, 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "zjYgW",
+              "createdAt": 1610926534244,
+              "title": "how easy to create tasks!"
+            },
+            {
+              "id": "P9dQ7",
+              "createdAt": 1610926534244,
+              "title": "invite your team!"
+            }
+          ]
+        },
+        {
+          "id": "pI0po",
+          "title": "Doing",
+          "style": {
+            "bgColor": "#4a94f882",
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          },
+          "tasks": [
+            {
+              "id": "OFe5X",
+              "createdAt": 1610926534244,
+              "title": "make dinner"
+            },
+            {
+              "id": "uMmVz",
+              "createdAt": 1610926534244,
+              "title": "buy groceries",
+              "todos": [
+                {
+                  "title": "Milk",
+                  "isDone": false,
+                  "id": "uOFUa"
+                },
+                {
+                  "title": "Bread",
+                  "isDone": false,
+                  "id": "j2hRC"
+                },
+                {
+                  "title": "Chocolate",
+                  "isDone": false,
+                  "id": "7VTOs"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "lkm",
+          "tasks": [],
+          "style": {
+            "title": {
+              "bgColor": "#C91462"
+            },
+            "bgColor": "#C9146282"
+          },
+          "id": "0zHyM"
+        }
+      ],
+      "_id": "vkPxnW0"
+    },
+    {
+      "title": "Boardie\n",
+      "members": [],
+      "style": {
+        "bg": "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)"
+      },
+      "description": "",
+      "createdAt": 1610980142258,
+      "lists": [
+        {
+          "id": "MAmDk",
+          "title": "To Do",
+          "style": {
+            "bgColor": "rgb(152, 149, 224,82)",
+            "title": {
+              "bgColor": "rgb(152, 149, 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "BuMGK",
+              "createdAt": 1610980142258,
+              "title": "how easy to create tasks!"
+            },
+            {
+              "id": "EhJNm",
+              "createdAt": 1610980142259,
+              "title": "invite your team!"
+            }
+          ]
+        },
+        {
+          "id": "M83QU",
+          "title": "Doing",
+          "style": {
+            "bgColor": "#4a94f882",
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          },
+          "tasks": [
+            {
+              "id": "n4Xtm",
+              "createdAt": 1610980142259,
+              "title": "make dinner"
+            },
+            {
+              "id": "yNtz4",
+              "createdAt": 1610980142259,
+              "title": "buy groceries",
+              "todos": [
+                {
+                  "title": "Milk",
+                  "isDone": false,
+                  "id": "euRzJ"
+                },
+                {
+                  "title": "Bread",
+                  "isDone": false,
+                  "id": "XOSf1"
+                },
+                {
+                  "title": "Chocolate",
+                  "isDone": false,
+                  "id": "nWmzm"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "_id": "zPebNhS"
+    }
+  ],
+  "user": [
+    {
+      "fullname": "Abi Abambi",
+      "username": "abi@ababmi.com",
+      "password": "aBambi123",
+      "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+    },
+    {
+      "fullname": "bobi bo",
+      "username": "abi@ababmi.com",
+      "password": "111",
+      "imgUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/142207-phones-feature-what-is-apple-face-id-and-how-does-it-work-image1-5d72kjh6lq-jpg.webp?v1"
+    },
+    {
+      "fullname": "Justin Timberlake",
+      "username": "bibi@ababmi.com",
+      "password": "password",
+      "imgUrl": "https://www.byrdie.com/thmb/eZJ7or3B6M-yi9p5PlOm0kYWJL4=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1035308964-5d15a77127854247b5c841d339a546c0.jpeg"
+    },
+    {
+      "fullname": "puki ben david",
+      "username": "puki@gmail.com",
+      "password": "123",
+      "imgUrl": "https://www.byrdie.com/thmb/8XvZ5tH8mk7tK09GzvjDp9AmDWQ=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-970183136-337cd75d743746de87552e085880e2d0.jpeg"
+    },
+    {
+      "username": "bla@bla.gmail",
+      "fullname": "nofar ",
+      "password": "1",
+      "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610699982/igckslovcmq4zyl1sqou.jpg"
+    },
+    {
+      "username": "puki@gmail.com",
+      "fullname": "puki ben david",
+      "password": "1",
+      "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+    }
+  ],
+  "background": [
+    "linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)",
+    "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+    "linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)",
+    "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)",
+    "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)",
+    "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)",
+    "linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)",
+    "linear-gradient(to top, #30cfd0 0%, #330867 100%)"
+  ]
+}

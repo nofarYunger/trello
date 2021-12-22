@@ -1,0 +1,56 @@
+@import "../setup/variables";
+
+.quick-edit-wrapper {
+  position: relative;
+  // z-index: $overlay-z-index + 1;
+  .quick-task-editor-buttons {
+    left: 20px;
+    opacity: 1;
+    position: absolute;
+    z-index: 11;
+    top: -4px;
+    left: 22px;
+    width: 240px;
+    transform: translateX(-20px);
+    transition: opacity 85ms ease-in, transform 85ms ease-in;
+    &-item {
+      background: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      border-radius: 3px;
+      clear: both;
+      color: #e6e6e6;
+      display: block;
+      float: left;
+      margin: 0 0 4px 8px;
+      padding: 6px 12px 6px 8px;
+      text-decoration: none;
+      transition: transform 85ms ease-in;
+      &-text {
+        font-size: 1.2em;
+      }
+      &-icon {
+        width: 0.9em;
+        margin-right: 5px;
+        padding-top: 3px;
+      }
+      &:hover {
+        transform: translateX(5%);
+        background-color: #1d2021;
+      }
+      &-text {
+        margin-left: 4px;
+      }
+    }
+    .quick-edit-datepicker {
+      top: 100px;
+      left: 0;
+    }
+  }
+  .move-task-popover {
+    top: 110px;
+    left: 0;
+  }
+  .copy-task-popover {
+    background-color: #fff;
+  }
+}

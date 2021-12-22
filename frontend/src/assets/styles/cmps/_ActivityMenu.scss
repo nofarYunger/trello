@@ -1,0 +1,77 @@
+.activity-menu {
+    @include popover-main;
+    position: fixed;
+    bottom: 0;
+    top: 41px;
+    width: 339px;
+    background-color: #f4f5f7;
+    right: -100%;
+    z-index: 4;
+    transition: right 0.5s;
+    &.open {
+        right: -10px;
+    }
+
+    .popover-header {
+        @include popover-header;
+    }
+    .popover-section {
+        @include popover-section;
+        .change-background-go-to-btn {
+            padding: 10px 10px;
+            @include side-menu-btn;
+            &:hover {
+                background-color: rgb(218, 219, 227);
+            }
+        }
+        overflow-y: scroll;
+        max-height: 93%;
+        &-list {
+            padding: 10px;
+            &-item {
+                display: grid;
+                grid-template-columns: 1fr 6fr;
+                min-height: 60px;
+                justify-items: start;
+                align-items: start;
+                display: grid;
+                margin-bottom: 10px;
+                .activity-by {
+                    font-family: Poppings-medium;
+                }
+                .activity-at {
+                    margin-top: 5px;
+                    font-size: 0.7em;
+                }
+                .task-title {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.background-menu-container {
+    .go-back-btn {
+        margin-inline-start: 15px;
+        @include side-menu-btn;
+    }
+    .background-menu {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow-y: auto;
+        max-height: 93%;
+        .bg-img-container {
+            height: 100px;
+            flex-basis: 48%;
+            border-radius: 6px;
+            background-size: cover;
+            cursor: pointer;
+            &:hover {
+                // filter: saturate(0.5);
+                filter: sepia(0.4);
+            }
+        }
+    }
+}

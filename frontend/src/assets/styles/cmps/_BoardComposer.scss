@@ -1,0 +1,219 @@
+// --------------------------------------------------- Compose Board -----------------------------------------------------------------
+
+.composer-screen {
+  backdrop-filter: blur(13px);
+  transition: opacity 0.1s;
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(7, 7, 7, 0.335);
+
+  &.transparent {
+    transition: opacity 0.1s;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.board-composer {
+  width: 460px;
+  padding: 3em 3em 2em;
+  background: rgba(255, 255, 255, 0.808);
+
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 6px;
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .board-details-wrapper {
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  @media screen and(max-width:500px) {
+    width: 355px;
+    padding: 2em;
+  }
+
+  .compose-board-btn {
+    align-self: flex-end;
+    border-radius: 0.5em;
+    margin-inline-end: 0.65em;
+    margin-top: 1em;
+    padding: 1em;
+    transition: color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+    }
+  }
+
+  textarea.title {
+    background-color: #e6dede6b;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    width: 90%;
+    text-align: center;
+   font-family: Poppings;
+    letter-spacing: 0.5px;
+    height: 38px;
+    line-height: 31px;
+  }
+
+  textarea {
+    background-color: rgba(255, 255, 255, 0.438);
+    border: none;
+    resize: none;
+    width: 80%;
+    overflow: break-row;
+    outline: none;
+    font-family: Segoe UI;
+    -moz-appearance: none;
+    &::placeholder {
+      font-family: Segoe UI;
+    }
+  }
+  .edit-board-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .addIcon {
+    cursor: pointer;
+    // margin-bottom: 10px;
+    font-size: 2em;
+    transition: color 0.2s;
+    padding: 3px 0;
+    &:hover {
+      background-color: #3d3d3d36;
+    }
+  }
+}
+.bg-options {
+  display: grid;
+  border-radius: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(87px, 1fr));
+  margin-top: 20px;
+}
+
+.member-preview {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bg-preview {
+  height: 5em;
+  width: 5em;
+  border-radius: 5px;
+  margin: 0 0.8em 0.8em 0;
+  background-size: cover;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid #3d3d3d;
+    z-index: 5;
+    position: relative;
+    box-shadow: 1px 0px 8px #4343434f;
+  }
+}
+
+.boards {
+  &.change-members-popover {
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    width: 400px;
+    height: 340px;
+    .popover-section {
+      max-height: 290px;
+      overflow-y: scroll;
+      margin-top: 0;
+    }
+.member-name{
+  margin-left: 8px;
+}
+    
+    .popover-header {
+      background-color: #ececec;
+      margin-bottom: 0;
+      &-title {
+        padding: 0;
+        height: 100%;
+        border-bottom: none;
+        padding-top: 4px;
+      }
+      input {
+        border: none;
+        border-radius: 5px;
+        width: 93%;
+        height: 30px;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.members-popup {
+  height: 300px;
+  overflow-y: auto;
+  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  // background-color: #fdfdfd;
+  transition: all 0.5s;
+  box-shadow: -1px 3px 7px 3px #58585882;
+
+  &.transparent {
+    box-shadow: none;
+    height: 0;
+  }
+  li {
+    border-top: 1px solid #ebe8e8b8;
+    transition: all 0.3s;
+    justify-content: space-between;
+    &:last-child {
+      border-bottom: 1px solid #ebe8e8b8;
+    }
+    &:hover {
+      background-color: #ebe8e8b8;
+    }
+    .icon {
+      transition: transform 0.3s;
+      cursor: pointer;
+      .remove {
+        transform: rotate(45);
+      }
+    }
+  }
+  input {
+    background-color: transparent;
+    font-family: Poppings-thin;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    color: #5f5e5e;
+  }
+}
+
+.board-card.demo-board {
+  display: inline-flex;
+  background-size: cover;
+  color: #333;
+  
+  &:hover {
+    border: none;
+    cursor: initial;
+  }
+  *::placeholder {
+    color: #333;
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,115 @@
+$main-font-size: .8em;
+
+.notification-popover {
+    @include popover-main;
+    position: absolute;
+    bottom: -8px;
+    right: -10px;
+    top: 50px;
+    width: 432px;
+    z-index: 4;
+    .popover-header {
+        @include popover-header;
+    }
+    .notification-actions {
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+        font-size: .8em;
+        text-decoration: underline;
+        color: #8993a3;
+        &>*{
+            cursor: pointer;
+            &:hover {
+                color: #3d3d3d;
+            }
+        }
+    }
+    .popover-section {
+        @include popover-section;
+        background-color: #e4f7fa;
+        overflow-y: scroll;
+        position: relative;
+        &-header {
+            @include popover-section-header;
+            font-size: $main-font-size;
+        }
+        &-list {
+            cursor: pointer;
+            padding-inline-start: 10px;
+            
+            &-item {
+             .notification-details {
+                 padding-right: 10px;
+                 margin-inline-start: 10px;
+                 &-header {
+                     
+                     font-size: .8em;
+                     padding: 8px 8px 8px 8px;
+                     border-radius: 4px 4px 0 0 ;
+                    background-color: #323b43;
+                    color: #fff;
+                    &-task-title {
+                        background-color: #fff;
+                        border-radius: 2px;
+                        color: $clr2;
+                        padding-bottom: 6px;
+                        flex-basis: 100%;
+                        padding-inline-start: 6px;
+                        padding-top: 4px;
+                    }
+                    &-board-title {
+                        font-family: Poppings-medium;
+                        margin-top: 4px;
+                    }
+                 }
+                 &-body {
+                     background-color: #f4f5f7;
+                     padding-left: 8px;
+                     padding-right: 8px;
+                     font-size: $main-font-size;
+                 }
+             }
+                color: $clr2;
+                margin-inline-start: 7px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                
+                font-size: 1.11em;
+                .checkbox-container {
+                    align-self: flex-start;
+                    &:hover {
+                        background-color: #bdecf3;
+                        
+                    }
+                }
+                .read-notification-checkbox {
+                    width: 20px;
+                    height: 20px;
+                    background-color: #00c2e0;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    border: 1px solid #ddd;
+                    -webkit-appearance: none;
+                    padding: 8px;
+                    outline: none;
+                    cursor: pointer;
+
+
+                    &:hover {
+                    }
+
+                    
+                }
+               
+                .picked-icon {
+                    position: absolute;
+                    right: 5px;
+                    color: #6e6e6e;
+                    width: 16px;
+                }
+              
+            }
+        }
+    }
+}
+

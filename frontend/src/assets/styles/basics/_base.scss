@@ -1,0 +1,88 @@
+@import "../setup/variables";
+@import "../setup/typography";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 20px;
+  color: $clr2;
+  scroll-behavior: smooth;
+  font-family: Poppings, "Segoe UI", sans-serif;
+  font-size: 14px;
+  @media (min-width: 800px) {
+    font-size: 16px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafafa00;
+  border: solid 1px #f5f5f500;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(190, 190, 190, 1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  // border: solid 3px rgba(250, 250, 250, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 125, 125, 1);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(250, 250, 250, 1);
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.4em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: rem(36px);
+}
+
+p {
+  margin: 0 0 2em;
+}
+
+.main-overlay {
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(8, 8, 8, 0.61);
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+
+  z-index: $overlay-z-index;
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-color: rgba(232, 240, 254, 0) !important;
+  background-image: none !important;
+  color: -internal-light-dark(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)) !important;
+}

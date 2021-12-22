@@ -1,0 +1,57 @@
+.change-members-popover {
+  @include popover-main;
+  position: fixed;
+  top: 65px;
+  .board-member-img {
+    margin-inline-end: 5px;
+  }
+  .popover-header {
+    height: 40px;
+    color: #212121;
+    position: relative;
+    margin-bottom: 8px;
+    text-align: center;
+    padding-inline-start: 11px;
+    padding-inline-end: 11px;
+    @include popover-header;
+  }
+  .popover-section {
+    @include popover-section;
+    max-height: 270px;
+    overflow-y: scroll;
+    &-header {
+      @include popover-section-header;
+    }
+    &-list {
+      @include popover-section-list;
+      cursor: pointer;
+      &-item {
+        position: relative;
+        color: $clr2;
+        margin-inline-start: 7px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 0.81rem;
+        .picked-icon {
+          position: absolute;
+          right: 5px;
+          color: #6e6e6e;
+          width: 16px;
+        }
+        &:hover {
+          background-color: rgb(245, 246, 248);
+        }
+      }
+    }
+  }
+}
+
+.members-popover-img-wrapper {
+  width: 40px;
+  @include aspect-ratio(1, 1);
+  margin-inline-end: 10px;
+  .members-popover-member-img {
+    width: 100%;
+    border-radius: 999px;
+  }
+}

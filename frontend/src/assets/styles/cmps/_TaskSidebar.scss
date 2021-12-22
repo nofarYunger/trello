@@ -1,0 +1,147 @@
+.task-sidebar {
+  top: 73px;
+  width: 100%;
+
+  @media (min-width: 800px) {
+    position: absolute;
+  }
+
+  .sidebar {
+    .sidebar-heading {
+      // font-weight: 400;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.3px;
+    }
+
+    .sidebar-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: rem(10px);
+      @media (min-width: 800px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .action-container {
+        background-color: rgba(9, 30, 66, 0.075);
+        border-radius: 3px;
+        height: 30px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        user-select: none;
+        width: calc(50% - 8px);
+        margin-left: 8px;
+
+        @media (min-width: 800px) {
+          width: 100%;
+        }
+
+        &:last-of-type {
+          &:hover {
+            background-color: #ef4040cc;
+          }
+        }
+
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: darken(#d9d7d7a3, 5%);
+        }
+        .action-icon {
+          position: relative;
+
+          svg {
+            position: absolute;
+            font-size: 1.25rem;
+            top: -10px;
+            left: 4px;
+
+            &.add-img-icon {
+              top: 0px;
+            }
+          }
+        }
+
+        .action-txt {
+          font-size: 0.875rem;
+          width: 100%;
+          margin-left: 35px;
+        }
+
+        .change-members-popover {
+          position: absolute;
+          z-index: 30;
+          left: -4px;
+          top: -120px;
+          width: 280px;
+          @media (min-width: 800px) {
+            width: 335px;
+            left: -200px;
+            top: 86px;
+          }
+
+          .popover-section-list {
+            @media (max-width: 800px) {
+              padding-inline-end: 0;
+            }
+          }
+
+          .popover-section-header {
+            @include popover-header;
+            color: #5e6c84;
+            height: initial;
+            font-weight: unset;
+          }
+
+          .popover-section-list-item {
+            font-size: 0.8rem;
+            @media (max-width: 800px) {
+              margin-inline-start: 0;
+              font-family: Poppings;
+            }
+          }
+
+          .task-member-preview-img {
+            height: 35px !important;
+            width: 35px !important;
+          }
+        }
+
+        .labels-popover {
+          position: absolute;
+          z-index: 30;
+          left: 0;
+          top: -250px;
+          width: 250px;
+          @media (min-width: 800px) {
+            left: -185px;
+            top: 51px;
+            width: 320px;
+          }
+        }
+      }
+    }
+  }
+
+  .copy-task-popover {
+    @include popover-main;
+    position: absolute;
+    z-index: 30;
+    top: -145px;
+    left: 0;
+    width: 250px;
+    @media (min-width: 800px) {
+      left: -185px;
+      top: 51px;
+      width: 335px;
+    }
+    .popover-header {
+      @include popover-header;
+    }
+
+    .copy-task-body {
+      margin: 0 auto;
+    }
+  }
+}

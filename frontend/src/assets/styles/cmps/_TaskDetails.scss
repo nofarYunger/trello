@@ -1,0 +1,447 @@
+.details-modal {
+  border-radius: 2px;
+  background-color: $task-bgc-clr;
+  z-index: 20;
+  padding-top: rem(20px);
+  margin: 48px 10px 80px;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    width: 768px;
+    min-height: 93vh;
+    margin: 48px auto 80px;
+    flex-direction: row;
+  }
+
+  transition: height 0.3s;
+  .main-details {
+    flex-basis: 75%;
+    margin-left: 40px;
+    line-height: 20px;
+
+    & > * {
+      position: relative;
+      font-size: 1.125rem;
+      font-family: Poppings-medium;
+      padding: 4px 12px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+    }
+    .details-header {
+      form {
+        width: 80%;
+        position: relative;
+
+        @media (min-width: 800px) {
+          width: 100%;
+        }
+      }
+
+      p {
+        padding: 0 8px;
+
+        @media (max-width: 400px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      .details-list-name {
+        text-decoration: underline;
+      }
+
+      textarea {
+        font-size: 1.5rem;
+
+        @media (max-width: 400px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .details-info {
+      .card-detail {
+        margin: 0 8px 8px 0;
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 0.75rem;
+          // font-weight: 400;
+          letter-spacing: 0.48px;
+          color: #5e6c84;
+          margin-left: 5px;
+        }
+        .member-imgs {
+          & > * {
+            margin-left: 5px;
+          }
+        }
+
+        .task-add-member {
+          z-index: 21;
+        }
+        .change-members-popover {
+          @media (max-width: 400px) {
+            width: 340px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .details-buttons {
+    flex-grow: 1;
+    position: relative;
+    margin: 0 auto;
+    @media (min-width: 800px) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.task-details-close-btn {
+  position: relative;
+  left: 24%;
+  z-index: 4;
+}
+.detail-labels {
+  .task-labels {
+    & > * {
+      margin-left: 5px;
+    }
+    .task-label-preview {
+      min-width: 40px;
+      height: 32px;
+      padding: 0 12px;
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .task-add-label {
+      border-radius: 3px;
+    }
+  }
+}
+
+.task-due-time {
+  line-height: 1.9;
+
+  .date-checkbox {
+    margin-right: 2px;
+  }
+
+  .date-complete {
+    background-color: #61bd4f;
+    padding: 0 12px;
+    letter-spacing: 0.2px;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 3px;
+    line-height: 18px;
+  }
+}
+
+.task-middle-details {
+  .details-description {
+    position: relative;
+    font-size: 1.125rem;
+    font-family: Poppings-medium, "Segoe UI";
+    padding: 4px 8px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+
+    textarea {
+      margin-bottom: 10px;
+      font-family: Poppings, "Segoe UI";
+    }
+  }
+
+  .task-desc-buttons {
+    svg {
+      margin-left: 8px;
+      cursor: pointer;
+      color: #172b4d;
+
+      transition: color 0.2s;
+
+      &:hover {
+        color: darken(#0d1a31, 15%);
+      }
+    }
+  }
+}
+
+.details-checklist {
+  margin-bottom: rem(15px);
+  position: relative;
+  font-size: 1.125rem;
+  font-family: Poppings-medium;
+  padding: 4px 8px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  .task-checklist {
+    .checklist-header {
+      position: relative;
+      margin-bottom: 5px;
+    }
+
+    .todo-title {
+      margin-left: 5px;
+
+      transition: all 0.2s;
+    }
+
+    .task-todo-container {
+      margin-bottom: 5px;
+      &:hover {
+        .todo-delete-btn {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.task-activity {
+  margin-bottom: rem(15px);
+  .activity-header {
+    position: relative;
+
+    h3 {
+      flex-grow: 1;
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      top: -3px;
+      padding: 5px 8px;
+
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .activity-container {
+    transition: opacity 0.2s;
+
+    .task-user-activity {
+      margin-bottom: 10px;
+    }
+  }
+
+  .activity-info {
+    margin: 0 0 0 5px;
+
+    .activity-txt {
+      margin-bottom: 0;
+      font-size: 1rem;
+      // font-weight: 400;
+      .activity-member-name {
+        font-family: Poppings-medium;
+        text-transform: capitalize;
+      }
+      .activity-task-title {
+        text-decoration: underline;
+      }
+    }
+
+    .activity-date {
+      span {
+        font-size: 0.75rem;
+        font-family: "Poppings-light", "Segoe UI";
+      }
+    }
+  }
+  .comment-dlt-container {
+    cursor: pointer;
+    position: relative;
+    .comment-dlt-btn {
+      position: absolute;
+      top: 35.5px;
+      font-size: 1.25rem;
+      padding: 2px;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 5px;
+
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #ef4040cc;
+      }
+    }
+  }
+
+  .task-user-comment {
+    .task-member-img {
+      transform: translateY(-4px);
+      margin-right: 3px;
+    }
+  }
+}
+
+.task-comments {
+  margin-bottom: rem(15px);
+
+  .new-comment {
+    margin-bottom: rem(10px);
+
+    .task-member-img {
+      transform: translateY(-3.5px);
+    }
+  }
+  .comment-txt {
+    margin: 4px 2px 4px 0;
+    padding: 2px 8px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px -1px rgba(9, 30, 66, 0.25),
+      0 0 0 1px rgba(9, 30, 66, 0.08);
+    span {
+      font-size: 0.875rem;
+      font-family: "Poppings", "Segoe UI";
+    }
+  }
+  form {
+    flex-grow: 1;
+    .comment-box {
+      margin-left: 5px;
+      .comment-textarea {
+        resize: none;
+        font-family: Poppings-light;
+        // font-weight: 300;
+
+        height: 36px;
+        border-radius: 3px;
+        padding: 4px 8px;
+        line-height: 24px;
+        width: 100%;
+        background-color: #fff;
+        color: inherit;
+
+        transition: all 0.2s;
+
+        &:focus {
+          outline: 2px solid lightskyblue;
+          border: none;
+        }
+      }
+
+      .task-desc-buttons {
+        button {
+          padding: 3px 6px;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+.due-date-popover {
+  @include popover-main;
+  z-index: 30;
+  position: absolute;
+  left: 0;
+  top: -85px;
+  width: 270px;
+  @media (min-width: 800px) {
+    width: 335px;
+    left: -350px;
+    top: 15px;
+  }
+
+  .popover-header {
+    @include popover-header;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+  }
+
+  .popover-header-title {
+    border: none;
+    font-size: 2em;
+  }
+
+  svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .due-date-body {
+    form {
+      margin-bottom: 10px;
+    }
+  }
+
+  .date-close-btn {
+    align-self: flex-start;
+  }
+}
+
+.details-attachments {
+  margin-bottom: rem(15px);
+  .details-images {
+    position: relative;
+    font-size: 1.125rem;
+    font-family: Poppings-medium;
+    padding: 4px 12px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+    .img-list {
+      .img-preview {
+        height: 250px;
+        background-position: 50%;
+        background-image: url(https://res.cloudinary.com/nofar/image/upload/v1611054053/vvssaaaczczaem9mijul.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+
+        &:hover {
+          .todo-delete-btn {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.move-task-popover {
+  @include popover-main;
+  z-index: 30;
+  position: absolute;
+  left: 0;
+  top: -145px;
+  width: 250px;
+  @media (min-width: 800px) {
+    width: 335px;
+    left: -350px;
+    top: 15px;
+  }
+
+  .move-task-body {
+    margin: 0 auto;
+  }
+
+  .popover-header {
+    @include popover-header;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+  }
+
+  svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}

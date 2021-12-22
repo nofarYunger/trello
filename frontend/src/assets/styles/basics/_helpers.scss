@@ -1,0 +1,158 @@
+// Font Sizes
+.fs12 {
+  font-size: rem(12px);
+}
+.fs14 {
+  font-size: rem(14px);
+}
+.fs18 {
+  font-size: rem(18px);
+}
+.fs20 {
+  font-size: rem(20px);
+}
+.fs24 {
+  font-size: rem(24px);
+}
+.fs28 {
+  font-size: rem(28px);
+}
+.fs30 {
+  font-size: rem(30px);
+}
+
+// flex helpers
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+// Media helpers
+
+.square-ratio {
+  @include aspect-ratio(1, 1);
+}
+.video-ratio {
+  @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+  @include aspect-ratio(9, 16);
+}
+
+// li
+
+.clear-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+.display-none {
+  display: none;
+}
+
+// TASK
+
+.task-textarea {
+  resize: none;
+  font-family: Poppings-medium;
+  
+  font-size: 1.125rem;
+  height: 36px;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  line-height: 24px;
+  width: 100%;
+  background-color: $task-bgc-clr;
+  color: inherit;
+  margin-bottom: 2px;
+
+  &:focus {
+    outline: 2px solid lightskyblue;
+    background-color: #fff;
+  }
+}
+
+.task-todo-input {
+  border: none;
+  border-radius: 3px;
+  background-color: $task-bgc-clr;
+  width: 85%;
+  padding: 4px 8px;
+
+  &:focus {
+    outline: 2px solid lightskyblue;
+    background-color: #fff;
+  }
+}
+
+.task-section-heading {
+  font-size: 1.125rem;
+  font-family: Poppings-medium;
+
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #9b9595;
+}
+
+.task-member-img {
+  height: 32px;
+  width: 32px;
+  img {
+    height: 32px;
+    width: 32px;
+    border-radius: 2em;
+    object-fit: cover;
+  }
+
+  svg {
+    border-radius: 2em;
+    background-color: darken(#eee, 5%);
+    font-size: 1.625rem;
+    padding: 2px;
+  }
+}
+
+.todo-delete-btn {
+  opacity: 0;
+  font-size: 1.25rem;
+  padding: 2px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+
+  transition: all 0.3s !important;
+
+  &:hover {
+    background-color: #ef4040cc;
+  }
+}

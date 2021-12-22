@@ -1,0 +1,66 @@
+.board {
+  
+    .lists-group {
+        align-items: flex-start;
+        margin-top: 60px;
+        .add-list {
+            // padding: 8px 0 8px 16px;
+            min-width: 272px;
+            .add-list-form {
+                @include list-title;
+                
+                position: relative;
+                background-color: rgba(140, 125, 125, 0.24);
+                height: 40px;
+                transition: all .2s;
+                padding-inline-end: 14px;
+                cursor: pointer;
+             
+
+                &.open {
+                    height: 90px;
+                }
+                &:hover {
+                    background-color: rgba(116, 116, 116, 0.46);
+                }
+                .add-list-btn {
+                    position: absolute;
+                    opacity: 0;
+                    bottom: 5px;
+                    visibility: hidden;
+                    align-self: flex-end;
+                    margin-bottom: 10px;
+                    &.open {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                
+                    input {
+                        cursor: pointer;
+                        color: #fff;
+                        align-self: center;
+                        width: 100%;
+                        @include transparent-input;
+                        &:focus {
+                            background-color: #fff;
+                            color: $clr2;
+                            border: 1px solid black;
+                            padding: 5px;
+                        }
+                        &::placeholder {
+                            color: #fff;
+                        }
+                    }
+              
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .board {
+        margin-top: 100px;
+    }
+}

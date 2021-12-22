@@ -1,0 +1,80 @@
+.icon-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.small-btn-bgc {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border-radius: 2em;
+  text-align: center;
+  background-color: $task-button-bgc;
+
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: darken($task-button-bgc-hover, 5%);
+  }
+}
+
+.close-btn {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border-radius: 2em;
+  text-align: center;
+
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: $task-button-bgc-hover;
+  }
+}
+
+.primary-btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: #61bd4f;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  box-shadow: none;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+
+  transition: all 0.2s;
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: lighten(#61bd4f, 5%);
+  }
+}
+
+.secondary-btn {
+  padding: 6px 12px;
+  border: none;
+  background-color: rgba(9, 30, 66, 0.075);
+  font-size: 14px;
+  color: #333;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  box-shadow: none;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+
+  transition: all 0.2s;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: darken(#d9d7d7a3, 5%);
+  }
+}

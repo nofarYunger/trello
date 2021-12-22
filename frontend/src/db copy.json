@@ -1,0 +1,580 @@
+{
+  "board": [
+    {
+     
+      "title": "Sprint 4 Project",
+      "createdAt": 1589983468418,
+      "createdBy": {
+        "_id": "600556f6fb996f4ca453bb0d",
+        "username": "FartsKing",
+        "fullname": "Reem Ben David",
+        "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+       
+      },
+      "style": {
+        "bg":"linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)"
+      },
+      "members": [
+        {
+          "_id": "600556f6fb996f4ca453bb0d",
+          "username": "FartsKing",
+          "fullname": "Reem Ben David",
+          "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+         
+        },
+        {
+          "_id" : "600558837f6dcf4ebc046dbc",
+          "username" : "YungiBabush",
+          "fullname" : "Nofar Yunger",
+          "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+      },
+        {
+          "_id" :"600557dc7f6dcf4ebc046dbb",
+          "username" : "FartsPrince",
+          "fullname" : "Yoni Segev",
+          "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+      }
+      ],
+      "lists": [
+        {
+          "id": "g101",
+          "title": "To Do",
+          "tasks": [
+            {
+              "title": "Finish full CRUDL",
+              "description": "Delete done.\nNeed to finish update,\n(labels,members etc)",
+              "createdAt": 1610634312873,
+              "id": "b89HN",
+              "labels": [
+                {
+                  "id": "105",
+                  "color": "#c377e0",
+                  "title": ""
+                }
+              ]
+            },
+            {
+              "title": "Lorem ipsum",
+              "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, autem.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, autem.",
+              "createdAt": 1610634356029,
+              "id": "UkYv0"
+            },
+            {
+              "title": "popo",
+              "description": "Always need one popo ",
+              "createdAt": 1610634412444,
+              "id": "Zh9hU"
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#9895e0"
+            }
+          }
+        },
+        {
+          "id": "g102",
+          "title": "In Progress",
+          "tasks": [
+            {
+              "id": "c104",
+              "title": "Help me",
+              "description": "description",
+              "comments": [
+                {
+                  "id": "ZdPnm",
+                  "txt": "a comment",
+                  "createdAt": 1590999817436,
+                  "byMember":  {
+                    "_id" :"600557dc7f6dcf4ebc046dbb",
+                    "username" : "FartsPrince",
+                    "fullname" : "Yoni Segev",
+                    "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+                }
+                }
+              ],
+              "checklists": [
+                {
+                  "id": "YEhmF",
+                  "title": "Checklist",
+                  "todos": [
+                    {
+                      "title": "To Do 1",
+                      "isDone": false,
+                      "id": "212jX"
+                    }
+                  ]
+                }
+              ],
+             "members": [ {
+              "_id": "600556f6fb996f4ca453bb0d",
+              "username": "FartsKing",
+              "fullname": "Reem Ben David",
+              "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+             
+            },
+            {
+              "_id" : "600558837f6dcf4ebc046dbc",
+              "username" : "YungiBabush",
+              "fullname" : "Nofar Yunger",
+              "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+          }],
+              "labels": [
+                {
+                  "id": "101",
+                  "color": "#61bd4f",
+                  "title": ""
+                },
+                {
+                  "id": "102",
+                  "color": "#f2d602",
+                  "title": ""
+                },
+                {
+                  "id": "103",
+                  "color": "#f99f1b",
+                  "title": ""
+                }
+              ],
+              "createdAt": 1590999730348,
+              "dueDate": 16156215211,
+              "byMember":  {
+                "_id" :"600557dc7f6dcf4ebc046dbb",
+                "username" : "FartsPrince",
+                "fullname" : "Yoni Segev",
+                "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+            },
+              "style": {}
+            },
+            {
+              "title": "Put more Demi-data",
+              "description": "One man has walked downstairs then fell then suddenly schnitzel. More jokes from reem at - www.blabla.iJustNeedWords.com",
+              "createdAt": 1610634626891,
+              "id": "bGJKR",
+              "labels": [
+                {
+                  "id": "103",
+                  "color": "#f99f1b",
+                  "title": ""
+                }
+              ],
+              "members": [
+                {
+                  "_id" :"600557dc7f6dcf4ebc046dbb",
+                  "username" : "FartsPrince",
+                  "fullname" : "Yoni Segev",
+                  "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+              },
+              {
+                "_id" : "600558837f6dcf4ebc046dbc",
+                "username" : "YungiBabush",
+                "fullname" : "Nofar Yunger",
+                "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+            }
+              ]
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          }
+        },
+        {
+          "id": "g103",
+          "title": "Done",
+          "tasks": [
+            {
+              "id": "e101",
+              "title": "Do that",
+              "createdAt": 1590999817436,
+              "labels": [
+                {
+                  "id": "105",
+                  "color": "#c377e0",
+                  "title": ""
+                },
+                {
+                  "id": "107",
+                  "color": "#1f79bf",
+                  "title": ""
+                },
+                {
+                  "id": "108",
+                  "color": "#3cc2e0",
+                  "title": ""
+                }
+              ]
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#4a94f8"
+            }
+          }
+        },
+        {
+          "id": "opd23",
+          "title": "Done",
+          "tasks": [
+            {
+              "id": "e101",
+              "title": "Do that",
+              "createdAt": 1590999817436,
+              "labels": [
+                {
+                  "id": "101",
+                  "color": "#61bd4f",
+                  "title": ""
+                },
+                {
+                  "id": "102",
+                  "color": "#f2d602",
+                  "title": ""
+                },
+                {
+                  "id": "103",
+                  "color": "#f99f1b",
+                  "title": ""
+                },
+                {
+                  "id": "105",
+                  "color": "#c377e0",
+                  "title": ""
+                },
+                {
+                  "id": "107",
+                  "color": "#1f79bf",
+                  "title": ""
+                },
+                {
+                  "id": "108",
+                  "color": "#3cc2e0",
+                  "title": ""
+                }
+              ]
+            },
+            {
+              "id": "e102",
+              "title": "Help me",
+              "description": "description",
+              "comments": [
+                {
+                  "id": "ZdPnm",
+                  "txt": "a comment",
+                  "createdAt": 1590999817436,
+                  "byMember":  
+                  {
+                    "_id" : "600558837f6dcf4ebc046dbc",
+                    "username" : "YungiBabush",
+                    "fullname" : "Nofar Yunger",
+                    "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610706165/zwqitxime2emoefcizwi.jpg"
+                }
+                }
+              ],
+              "checklists": [
+                {
+                  "id": "YEhmF",
+                  "title": "Checklist",
+                  "todos": [
+                    {
+                      "title": "To Do 1",
+                      "isDone": false,
+                      "id": "212jX"
+                    }
+                  ]
+                }
+              ],
+              "members": [
+                {
+                  "_id" :"600557dc7f6dcf4ebc046dbb",
+                  "username" : "FartsPrince",
+                  "fullname" : "Yoni Segev",
+                  "imgUrl" : "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+              },
+              {
+                "_id": "600556f6fb996f4ca453bb0d",
+                "username": "FartsKing",
+                "fullname": "Reem Ben David",
+                "imgUrl": "https://res-console.cloudinary.com/nofar/thumbnails/v1/image/upload/v1610714978/eWFoYnlvZ2J3c3ByY2Rkc3ExbzA=/grid/"
+               
+              }
+              ],
+              "labels": [
+                {
+                  "id": "104",
+                  "color": "#eb5a46",
+                  "title": ""
+                },
+                {
+                  "id": "105",
+                  "color": "#c377e0",
+                  "title": ""
+                },
+                {
+                  "id": "107",
+                  "color": "#1f79bf",
+                  "title": ""
+                },
+                {
+                  "id": "108",
+                  "color": "#3cc2e0",
+                  "title": ""
+                }
+              ],
+              "createdAt": 1590999730348,
+              "dueDate": 16156215211,
+              "byMember": {
+               
+                "username": "Tal",
+                "fullname": "Tal Tarablus",
+                "imgUrl": "http://res.cloudinary.com/shaishar9/image/upload/v1590850482/j1glw3c9jsoz2py0miol.jpg"
+              },
+              "style": {
+                "bgColor": "#26de81"
+              }
+            }
+          ],
+          "style": {
+            "title": {
+              "bgColor": "#56c991"
+            }
+          }
+        }
+      ],
+      "activities": [
+        {
+          "id": "a101",
+          "txt": "Changed Color",
+          "createdAt": 154514,
+          "byMember": {
+           
+            "fullname": "Abi Abambi",
+            "imgUrl": "http://some-img"
+          },
+          "task": {
+            "id": "c101",
+            "title": "Replace Logo"
+          }
+        }
+      ]
+    },
+    {
+      "title": "stam board",
+      "members": [
+        {
+         
+          "fullname": "bobi bo",
+          "username": "abi@ababmi.com",
+          "password": "111",
+          "imgUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/142207-phones-feature-what-is-apple-face-id-and-how-does-it-work-image1-5d72kjh6lq-jpg.webp?v1"
+        },
+        {
+         
+          "fullname": "Abi Abambi",
+          "username": "abi@ababmi.com",
+          "password": "aBambi123",
+          "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+        }
+      ],
+      "style": {
+        "bg": "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)"
+      },
+      "description": "to build our business",
+      "createdAt": 1610647239461,
+      "lists": [
+        {
+          "id": "yVlF2",
+          "title": "To Do",
+          "style": {
+            "title": {
+              "bgColor": "rgb(152 149 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "5v4L7",
+              "createdAt": 1610647239461,
+              "title": "how easy to create tasks!"
+            },
+            {
+              "id": "LxWVZ",
+              "createdAt": 1610647239461,
+              "title": "invite your team!"
+            },
+            {
+              "title": "",
+              "description": "",
+              "createdAt": 1610716377943,
+              "id": "5CuOz"
+            }
+          ]
+        },
+        {
+          "id": "EdPBL",
+          "title": "Doing",
+          "style": {
+            "title": {
+              "bgColor": "rgb(152 149 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "GYNi3",
+              "createdAt": 1610647239461,
+              "title": "make dinner"
+            },
+            {
+              "id": "zF69W",
+              "createdAt": 1610647239461,
+              "title": "buy groceries",
+              "todos": [
+                {
+                  "title": "Milk",
+                  "isDone": false,
+                  "id": "SlWU1"
+                },
+                {
+                  "title": "Bread",
+                  "isDone": false,
+                  "id": "FyB5x"
+                },
+                {
+                  "title": "Chocolate",
+                  "isDone": false,
+                  "id": "wxTdg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+     
+    },
+    {
+      "title": "nisayon",
+      "members": [],
+      "style": {
+        "bg": "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)"
+      },
+      "description": "",
+      "createdAt": 1610647299947,
+      "lists": [
+        {
+          "id": "5UKfH",
+          "title": "To Do",
+          "style": {
+            "title": {
+              "bgColor": "rgb(152 149 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "szKvs",
+              "createdAt": 1610647299947,
+              "title": "how easy to create tasks!"
+            },
+            {
+              "id": "KEO86",
+              "createdAt": 1610647299947,
+              "title": "invite your team!"
+            }
+          ]
+        },
+        {
+          "id": "zfYDY",
+          "title": "Doing",
+          "style": {
+            "title": {
+              "bgColor": "rgb(152 149 224)"
+            }
+          },
+          "tasks": [
+            {
+              "id": "PxBui",
+              "createdAt": 1610647299947,
+              "title": "make dinner"
+            },
+            {
+              "id": "lzp5K",
+              "createdAt": 1610647299947,
+              "title": "buy groceries",
+              "todos": [
+                {
+                  "title": "Milk",
+                  "isDone": false,
+                  "id": "aF0Ki"
+                },
+                {
+                  "title": "Bread",
+                  "isDone": false,
+                  "id": "awDuz"
+                },
+                {
+                  "title": "Chocolate",
+                  "isDone": false,
+                  "id": "ht4t0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+     
+    }
+  ],
+  "user": [
+    {
+     
+      "fullname": "Abi Abambi",
+      "username": "abi@ababmi.com",
+      "password": "aBambi123",
+      "imgUrl": "https://www.maccosmetics.ca/media/export/cms/products/640x600/mac_sku_MW3A53_640x600_1.jpg"
+    },
+    {
+     
+      "fullname": "bobi bo",
+      "username": "abi@ababmi.com",
+      "password": "111",
+      "imgUrl": "https://cdn.pocket-lint.com/r/s/970x/assets/images/142207-phones-feature-what-is-apple-face-id-and-how-does-it-work-image1-5d72kjh6lq-jpg.webp?v1"
+    },
+    {
+     
+      "fullname": "Justin Timberlake",
+      "username": "bibi@ababmi.com",
+      "password": "password",
+      "imgUrl": "https://www.byrdie.com/thmb/eZJ7or3B6M-yi9p5PlOm0kYWJL4=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1035308964-5d15a77127854247b5c841d339a546c0.jpeg"
+    },
+    {
+     
+      "fullname": "puki ben david",
+      "username": "puki@gmail.com",
+      "password": "123",
+      "imgUrl": "https://www.byrdie.com/thmb/8XvZ5tH8mk7tK09GzvjDp9AmDWQ=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-970183136-337cd75d743746de87552e085880e2d0.jpeg"
+    },
+    {
+      "username": "bla@bla.gmail",
+      "fullname": "nofar ",
+      "password": "1",
+      "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610699982/igckslovcmq4zyl1sqou.jpg"
+     
+    },
+    {
+      "username": "puki@gmail.com",
+      "fullname": "puki ben david",
+      "password": "1",
+      "imgUrl": "https://res.cloudinary.com/nofar/image/upload/v1610704078/eioo9rguuc17gepjusmn.jpg"
+     
+    }
+  ],
+  "background": [
+    "linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%)",
+    "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)",
+    "linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)",
+    "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)",
+    "linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)",
+    "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)",
+    "linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)",
+    "linear-gradient(to top, #30cfd0 0%, #330867 100%)"
+  ]
+}

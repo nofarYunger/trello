@@ -1,0 +1,56 @@
+.labels-popover {
+  @include popover-main;
+  position: fixed;
+  top: 30px;
+  .popover-header {
+    height: 40px;
+    color: #212121;
+    position: relative;
+    margin-bottom: 8px;
+    text-align: center;
+    padding-inline-start: 11px;
+    padding-inline-end: 11px;
+    @include popover-header;
+  }
+  .popover-section {
+    @include popover-section;
+    &-header {
+      @include popover-section-header;
+    }
+    &-list {
+      @include popover-section-list;
+      margin: 0 0 5px 5px;
+      input {
+        border: none;
+        outline: none;
+      }
+      &-item {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        color: #fff;
+        font-size: 18px;
+        font-family: Poppings-medium;
+        padding-left: 8px;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+        
+        &.picked {
+          border: 3px solid #635959;
+        }
+      }
+
+      svg {
+        cursor: pointer;
+        margin: 0 3px;
+        width: 22px;
+        fill: #6e6868;
+      }
+    }
+  }
+  .save-labels-btn {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}

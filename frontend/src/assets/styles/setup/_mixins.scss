@@ -1,0 +1,185 @@
+/* Breakpoint mixins */
+
+@mixin for-mobile-layout {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (min-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (min-width: $narrow-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $normal-breakpoint) {
+    @content;
+  }
+}
+
+/* Media  Mixins */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Mixin for removing hover efects on iphone screen
+@mixin hover-supported {
+  @media not all and (pointer: coarse) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+//lists
+
+@mixin list-title {
+  margin-bottom: 10px;
+  color: #fff;
+  padding: 7px 0 7px 5px;
+  border-radius: 4px;
+}
+
+@mixin transparent-input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+}
+//Popovers
+@mixin popover-main {
+  color: &clr2;
+  width: 354px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  cursor: default;
+}
+
+// @mixin popover-header {
+//   &-title {
+//     border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+//     flex-grow: 1;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     font-size: 1.2em;
+//   }
+
+@mixin popover-header {
+  font-size: 0.7em;
+  position: relative;
+  height: 40px;
+  color: #3d3d3d;
+  position: relative;
+  margin-bottom: 8px;
+  text-align: center;
+  padding-inline-start: 11px;
+  padding-inline-end: 11px;
+  &-title {
+    border-bottom: 1px solid rgba(9, 30, 66, 0.13);
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+  }
+  .close-icon {
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #3d3d3d;
+  }
+  // &-close-btn {
+  //   color: #6b778c;
+  //   padding: 10px 12px 10px 8px;
+  //   position: absolute;
+  //   top: 2px;
+  //   right: 0;
+  //   z-index: 2;
+  //   color: black;
+  //   font-size: 38px;
+  //   cursor: pointer;
+  // }
+}
+@mixin popover-section {
+  margin-top: 12px;
+}
+
+@mixin popover-section-header {
+  text-transform: uppercase;
+  font-family: Poppings-medium;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  color: $clr2;
+}
+
+@mixin popover-section-list {
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
+}
+
+@mixin header-title {
+  font-size: 20px;
+  font-family: Poppings-medium;
+  margin-inline-start: 1.5em;
+}
+
+@mixin svg-bg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin board-member-img {
+  width: 30px;
+  margin: 4px;
+  @include aspect-ratio(1, 1);
+  .board-member-img {
+    border-radius: 999px;
+    width: 100%;
+  }
+}
+
+@mixin side-menu-btn {
+  text-align: start;
+  background-color: transparent;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #54637d;
+  border: none;
+  &:hover {
+      background-color: rgb(218, 219, 227);
+  }
+}

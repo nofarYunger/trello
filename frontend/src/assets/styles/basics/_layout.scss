@@ -1,0 +1,71 @@
+.main-container {
+  display: grid;
+  grid-template-columns:
+    minmax(1.6rem, 1fr)
+    minmax(auto, $normal-breakpoint)
+    minmax(1.6rem, 1fr);
+
+  & > * {
+    grid-column: 2;
+  }
+
+  @include for-narrow-layout {
+    grid-template-columns:
+      minmax(1.6rem, 1fr)
+      minmax(auto, $mobile-breakpoint)
+      minmax(1.6rem, 1fr);
+  }
+
+  @include for-normal-layout {
+    grid-template-columns:
+      minmax(1.6rem, 1fr)
+      minmax(auto, $narrow-breakpoint)
+      minmax(1.6rem, 1fr);
+  }
+
+  @include for-wide-layout {
+    grid-template-columns:
+      minmax(1.6rem, 1fr)
+      minmax(auto, $normal-breakpoint)
+      minmax(1.6rem, 1fr);
+  }
+}
+
+// Main Header Layout
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 20px;
+}
+
+.main-layout {
+  // max-width: 1400px;
+  @media screen and (max-width: 1450px) {
+    max-width: 1100px;
+  }
+  @media screen and (max-width: 1200px) {
+    max-width: 980px;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: 700px;
+  }
+  @media screen and (max-width: 780px) {
+    max-width: 500px;
+  }
+  @media screen and (max-width: 500px) {
+    max-width: 400px;
+  }
+}
+
+.board-layout {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 720px;
+$normal-breakpoint: 960px;
+
+.board-composer-layout {
+  margin: 0 20px;
+}
